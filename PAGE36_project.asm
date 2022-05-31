@@ -26,7 +26,9 @@ L2: lda Colours,y           // Load Value from the Label below (Move on to next 
     iny                     // Increase Y by 1
     cpy #$06                // Is Y >= 6 ?
     bne L2                  // if not keep looping
-    rts
+
     
-Message:    .byte $08, $0f,$08, $0f,$08, $0f
-Colours:    .byte $01,$02, $01,$02, $01,$02
+    rts
+
+Message:   .byte $08, $0f,$08, $0f,$08, $0f
+Colours:   .byte $02, $01,$02, $01,$02, $01
